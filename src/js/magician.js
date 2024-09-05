@@ -1,10 +1,8 @@
-import Character from './character'
+import MagicianDaemon from './magicianDaemon'
 
-export default class Magician extends Character {
-	constructor (name) {
-		super(name, 'Magician')
-
-		this.attack = 10;
+export default class Magician extends MagicianDaemon {
+	constructor ({ name, attack = 10, stoned = false, distance }) {
+		super({ name: name, type: 'Magician', attack: attack, stoned: stoned, distance: distance });
 		this.defence = 40;
-	}
+	};
 }

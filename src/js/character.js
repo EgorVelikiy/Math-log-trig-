@@ -16,6 +16,7 @@ export default class Character {
 		this.level = 1;
 		this.attack = undefined;
 		this.defence = undefined;
+
 	}
 
 	levelUp() {
